@@ -100,6 +100,9 @@
 		F70CAE3A1F8CF31A008125FD /* NCEndToEndEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = F70CAE391F8CF31A008125FD /* NCEndToEndEncryption.m */; };
 		F710E8101EF95C9C00DC2427 /* CCIntro.m in Sources */ = {isa = PBXBuildFile; fileRef = F710E80E1EF95C9C00DC2427 /* CCIntro.m */; };
 		F710E8111EF95C9C00DC2427 /* ImagesIntro.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F710E80F1EF95C9C00DC2427 /* ImagesIntro.xcassets */; };
+		F712B6272029DFCF0034F608 /* FileProviderEnumerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F712B6252029DFCF0034F608 /* FileProviderEnumerator.swift */; };
+		F712B6282029DFCF0034F608 /* FileProviderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F712B6262029DFCF0034F608 /* FileProviderItem.swift */; };
+		F712B62A2029E7480034F608 /* FileProviderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F712B6292029E7480034F608 /* FileProviderManager.swift */; };
 		F71459B81D12E3B700CAFEEC /* CCError.m in Sources */ = {isa = PBXBuildFile; fileRef = F76C3B881C638A4C00DC4301 /* CCError.m */; };
 		F71459BA1D12E3B700CAFEEC /* NSString+TruncateToWidth.m in Sources */ = {isa = PBXBuildFile; fileRef = F73049B91CB567F000C7C320 /* NSString+TruncateToWidth.m */; };
 		F71459BC1D12E3B700CAFEEC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = F70F05261C889184008DAB36 /* Reachability.m */; };
@@ -758,6 +761,9 @@
 		F710E80D1EF95C9C00DC2427 /* CCIntro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCIntro.h; sourceTree = "<group>"; };
 		F710E80E1EF95C9C00DC2427 /* CCIntro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCIntro.m; sourceTree = "<group>"; };
 		F710E80F1EF95C9C00DC2427 /* ImagesIntro.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ImagesIntro.xcassets; sourceTree = "<group>"; };
+		F712B6252029DFCF0034F608 /* FileProviderEnumerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileProviderEnumerator.swift; sourceTree = "<group>"; };
+		F712B6262029DFCF0034F608 /* FileProviderItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileProviderItem.swift; sourceTree = "<group>"; };
+		F712B6292029E7480034F608 /* FileProviderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProviderManager.swift; sourceTree = "<group>"; };
 		F7151A801D477A4B00E6AF45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/BKPasscodeView.strings; sourceTree = "<group>"; };
 		F7151A811D477A4B00E6AF45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F7151A821D477A4B00E6AF45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -2133,7 +2139,10 @@
 			isa = PBXGroup;
 			children = (
 				F7F54CAB1E5AFF1E00E19C62 /* PickerFileProvider-Bridging-Header.h */,
+				F712B6252029DFCF0034F608 /* FileProviderEnumerator.swift */,
+				F712B6262029DFCF0034F608 /* FileProviderItem.swift */,
 				F74344241E1264EE001CC831 /* FileProvider.swift */,
+				F712B6292029E7480034F608 /* FileProviderManager.swift */,
 			);
 			path = PickerFileProvider;
 			sourceTree = "<group>";
@@ -3720,9 +3729,11 @@
 				F7BB50E21F2238D000C47094 /* AFURLRequestSerialization.m in Sources */,
 				F7BB50BC1F22375D00C47094 /* CCBKPasscode.m in Sources */,
 				F7BB50D81F2238A000C47094 /* OCXMLListParser.m in Sources */,
+				F712B62A2029E7480034F608 /* FileProviderManager.swift in Sources */,
 				F7BB50E41F2238D500C47094 /* AFURLSessionManager.m in Sources */,
 				F7BB50F91F2239C800C47094 /* BKShiftingView.m in Sources */,
 				F7BB50F21F22395D00C47094 /* UICKeyChainStore.m in Sources */,
+				F712B6282029DFCF0034F608 /* FileProviderItem.swift in Sources */,
 				F7BB50D01F22388600C47094 /* OCRichObjectStrings.m in Sources */,
 				F7BB50C91F22386400C47094 /* OCActivity.m in Sources */,
 				F7BB50AF1F22370300C47094 /* NCManageDatabase.swift in Sources */,
@@ -3730,6 +3741,7 @@
 				F7BB50BB1F22374E00C47094 /* OCNetworking.m in Sources */,
 				F7BB50C11F22378E00C47094 /* CCHud.m in Sources */,
 				F7BB50DE1F2238B700C47094 /* UtilsFramework.m in Sources */,
+				F712B6272029DFCF0034F608 /* FileProviderEnumerator.swift in Sources */,
 				F7BB50D61F22389900C47094 /* OCHTTPRequestOperation.m in Sources */,
 				F75131661FA5EFF4002BB4D1 /* NCNetworkingSync.m in Sources */,
 				F7BB50BD1F22376000C47094 /* CCCertificate.m in Sources */,
